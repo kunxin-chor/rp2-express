@@ -25,6 +25,7 @@ app.get("/about-us", function(req,res){
     res.send("About Us");
 })
 
+// partial matching using route parameters
 // match hello/<anything>
 // will match hello/paul or hello/daniel
 app.get('/hello/:firstName', function(req,res){
